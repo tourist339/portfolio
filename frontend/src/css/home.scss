@@ -1,0 +1,105 @@
+@use "variables";
+.container{
+
+}
+body{
+  position: relative;
+  height: 100%;
+}
+.home-bg{
+  background-color: rgba(254, 171, 107, 0.3);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top:0;
+
+
+}
+.home-start{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  img{
+    position: absolute;
+  }
+}
+#laptop-img{
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+}
+#headphone-img{
+  top: 35%;
+  left: 10%;
+  transform: rotateZ(-20deg);
+}
+#coffee-img{
+  top: 35%;
+  right: 18%;
+  transform: rotateZ(10deg);
+
+}
+
+
+#projects{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+
+  height: 100%;
+
+}
+#project-slides{
+  flex:2;
+  margin-right: 5px;
+}
+#project-sidebar{
+  flex:1;
+  position: relative;
+
+  margin-left: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  background-color: #4A403A;
+  height: 100vh;
+  &>div{
+    margin: 0 auto;
+    width: 80%;
+  }
+  .text-heading{
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: xxx-large !important;
+    color: whitesmoke;
+    border-bottom:3px solid white;
+
+  }
+
+  .project-name{
+    font-weight: 500;
+    margin: 20px 0px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: x-large !important;
+
+    color: whitesmoke;
+    padding: 5px;
+
+    &:hover{
+      background-color: whitesmoke;
+      color: black;
+      border-color: black;
+      cursor: pointer;
+    }
+
+  }
+
+}
+
+.p-slide{
+  padding: 8px;
+}

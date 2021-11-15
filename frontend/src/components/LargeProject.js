@@ -9,13 +9,17 @@ const LargeProject = (props) => (
     <div className="large-project" style={{backgroundColor:props.backgroundColor}}>
         <h1 className="title text-mid-heading">{props.title}</h1>
 
-
         <div className="media-container row-flex-center">
-            <Slideshow imgs={props.imgs} className="slideshow-large-project"/>
+            <Slideshow res={props.res} className="slideshow-large-project"/>
             <LinkBar/>
         </div>
         {/*Anchor point to display sidebar name */}
         <div className={props.sidebarName}/>
+
+        <div className="tech-stack">
+            <span className="stack-head">Technology Stack</span><span> : </span>
+            {props.stack.map((item,index)=><span key={index}><span  className="stack-item"> {item}</span><span> | </span></span>)}
+        </div>
         <div className="description-box ">
             <p>{props.description}</p>
         </div>

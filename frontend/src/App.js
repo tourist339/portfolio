@@ -7,6 +7,8 @@ import Home from "./components/Home";
 import {useState} from "react";
 import "./css/main.css"
 
+
+
 function App() {
     const [headerDisplay,setHeaderDisplay]=useState("absolute") //css display property
   return (
@@ -20,6 +22,7 @@ function App() {
                 <Header display="fixed"/>
                 <Home title="Home"/>
             </Route>
+
 
         </Switch>
     </div>

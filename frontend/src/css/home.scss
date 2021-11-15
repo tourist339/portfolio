@@ -7,7 +7,7 @@ body{
   height: 100%;
 }
 .home-bg{
-  background-color: rgba(254, 171, 107, 0.3);
+  background-color: white;
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -53,46 +53,48 @@ body{
 
 }
 #project-slides{
-  flex:2;
   margin-right: 5px;
 }
+.project-scroll{
+  flex: 2;
+}
+.project-fixed{
+  display: block;
+}
 #project-sidebar{
-  flex:1;
-  position: relative;
 
   margin-left: 5px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   text-align: center;
-  background-color: #4A403A;
+  background-color: white;
   height: 100vh;
   &>div{
     margin: 0 auto;
     width: 80%;
   }
   .text-heading{
-    font-weight: bold;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     font-size: xxx-large !important;
-    color: whitesmoke;
-    border-bottom:3px solid white;
+    color: black;
+    border-bottom:2px solid #ffbf00;
 
   }
 
   .project-name{
     font-weight: 500;
-    margin: 20px 0px;
+    margin: 40px 0px;
     border: 2px solid white;
     border-radius: 8px;
     font-size: x-large !important;
-
-    color: whitesmoke;
-    padding: 5px;
+    border-bottom:1px solid variables.$color_gray;
+    width: fit-content;
+    color: black;
+    padding: 5px 50px;
 
     &:hover{
       background-color: whitesmoke;
-      color: black;
-      border-color: black;
+      border-bottom-width: 2px;
       cursor: pointer;
     }
 
@@ -100,6 +102,18 @@ body{
 
 }
 
+.sidebar-scroll{
+  flex:1;
+  position: relative;
+  display: block;
+  top: 0;
+  right: 0;
+}
+.sidebar-fixed{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
 .p-slide{
   padding: 8px;
 }

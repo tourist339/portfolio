@@ -49,7 +49,7 @@ body {
 }
 
 .home-bg {
-  background-color: rgba(254, 171, 107, 0.3);
+  background-color: white;
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -94,18 +94,23 @@ body {
 }
 
 #project-slides {
-  flex: 2;
   margin-right: 5px;
 }
 
+.project-scroll {
+  flex: 2;
+}
+
+.project-fixed {
+  display: block;
+}
+
 #project-sidebar {
-  flex: 1;
-  position: relative;
   margin-left: 5px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   text-align: center;
-  background-color: #4A403A;
+  background-color: white;
   height: 100vh;
 }
 #project-sidebar > div {
@@ -113,26 +118,40 @@ body {
   width: 80%;
 }
 #project-sidebar .text-heading {
-  font-weight: bold;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   font-size: xxx-large !important;
-  color: whitesmoke;
-  border-bottom: 3px solid white;
+  color: black;
+  border-bottom: 2px solid #ffbf00;
 }
 #project-sidebar .project-name {
   font-weight: 500;
-  margin: 20px 0px;
+  margin: 40px 0px;
   border: 2px solid white;
   border-radius: 8px;
   font-size: x-large !important;
-  color: whitesmoke;
-  padding: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  width: fit-content;
+  color: black;
+  padding: 5px 50px;
 }
 #project-sidebar .project-name:hover {
   background-color: whitesmoke;
-  color: black;
-  border-color: black;
+  border-bottom-width: 2px;
   cursor: pointer;
+}
+
+.sidebar-scroll {
+  flex: 1;
+  position: relative;
+  display: block;
+  top: 0;
+  right: 0;
+}
+
+.sidebar-fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .p-slide {

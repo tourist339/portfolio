@@ -1,4 +1,4 @@
-
+@import "variables";
 .large-project{
   $padding-top-bottom:40px;
   width: 100%;
@@ -9,6 +9,7 @@
   height: 100vh;
 
   margin-bottom: 20px;
+
   .linkbar{
     padding: 10px 5px;
     &>a{
@@ -31,12 +32,27 @@
 .title{
   letter-spacing: 0.2em;
   border-radius: 0.2em;
-  background-color: beige;
-  padding: 4px;
+  padding: 0.3em 0;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
 
 }
-.slideshow{
-  width: 80%;
+.tech-stack{
+  margin: 2em 0px 1em 0;
+  padding: 4px 10px;
+  text-align: left;
+  font-size: larger;
+  word-spacing: 0.2em;
+  .stack-head{
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 8px 4px;
+    border-radius: 10px;
+  }
+  .stack-item{
+    margin: 0 4px;
+    border-bottom: 2px solid green;
+  }
 
 }
 .description-box{
@@ -45,4 +61,7 @@
   word-spacing: 0.4em;
   letter-spacing: 0.1em;
   line-height: 1.4em;
+  p{
+    margin: 0px;
+  }
 }
